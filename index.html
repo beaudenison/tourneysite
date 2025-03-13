@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Tournament Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gaming Tournament Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Ultimate Gaming Experience</h2>
+        <p>Join our community and compete in epic tournaments!</p>
+    </section>
+
+    <section id="tournaments">
+        <h2>Upcoming Tournaments</h2>
+        <div class="tournament-list" id="tournamentList">
+            <!-- Tournaments will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Register Now</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="game">Choose Game:</label>
+            <select id="game" required>
+                <option value="">Select a game</option>
+                <option value="valorant">Valorant</option>
+                <option value="fortnite">Fortnite</option>
+                <option value="csgo">CS:GO</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gaming Tournament Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
